@@ -46,6 +46,7 @@ static id __instance;
 	[coder finishEncoding];
 	
 	[encodedData writeToFile:__cachedFile atomically:YES];
+	[encodedData release];
 }
 
 - (void)restoreViewController:(UIViewController*)viewController {
